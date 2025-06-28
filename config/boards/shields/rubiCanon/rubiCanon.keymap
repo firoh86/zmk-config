@@ -14,12 +14,11 @@
 
 
  / {
-     sensors {
+        sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <48>;
-    };
-
+        sensors = <&left_encoder &right_encoder>; 
+        triggers-per-rotation = <12>;
+        };
     
     keymap {
         compatible = "zmk,keymap";
