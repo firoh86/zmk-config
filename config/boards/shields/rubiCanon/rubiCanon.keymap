@@ -31,7 +31,7 @@
                 &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M &kp COMMA &kp DOT &kp SLASH
                 &kp LCTRL &kp LALT &mo 1             &mo 2 &kp SPACE &kp RALT
                 // fila 4 (direct inputs)
-                &kp CAPS &kp Y &kp
+                &kp CAPS &kp Y &kp U
             >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
