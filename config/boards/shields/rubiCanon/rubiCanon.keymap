@@ -57,7 +57,7 @@
                 &trans &trans &trans &trans &trans                                     &kp C_VOL_UP &kp HOME &kp C_VOL_DN &trans &out OUT_TOG
                 &trans &trans &mo 3                                                    &trans   &trans   &trans
                 // fila 4 (direct inputs)
-                &out OUT_BLE
+                &kp CAPS
             >;
             sensor-bindings = <&inc_dec_kp &kp C_VOL_UP &kp C_VOL_DN &inc_dec_kp &kp PG_UP &kp PG_DN>;
         };
@@ -69,7 +69,7 @@
                 &kp Z &kp X &kp C &kp V &kp B         &kp N &kp M &kp COMMA &kp DOT &kp SLASH
                 &kp LCTRL &kp LALT &trans             &trans &kp SPACE &kp RALT
                 // fila 4 (direct inputs)
-                &out OUT_BLE
+                &kp CAPS
             >;
             sensor-bindings = <&inc_dec_kp &kp C_VOL_UP &kp C_VOL_DN &inc_dec_kp &kp PG_UP &kp PG_DN>;
         };
