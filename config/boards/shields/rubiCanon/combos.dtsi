@@ -52,14 +52,14 @@
         };
 
         combo_interrogacion_abre {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <3 4>; // R y T
             bindings = <&kp LS(EQUAL)>; 
             layers = <0>;
         };
 
         combo_interrogacion_cierra {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <5 6>; // Y y U
             bindings = <&kp LS(UNDER)>; 
             layers = <0>;
