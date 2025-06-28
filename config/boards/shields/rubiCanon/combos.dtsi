@@ -71,12 +71,5 @@
             bindings = <&kp APOSTROPHE>;
             layers = <0>;
         };
-
-        combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <23 24>; // LGUI
-            bindings = <&kp LGUI>;
-            layers = <0>;
-        };
     };
 };

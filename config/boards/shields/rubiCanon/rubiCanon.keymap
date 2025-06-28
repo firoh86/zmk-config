@@ -45,7 +45,7 @@
                 &kp F9 &kp F10 &kp F11 &kp F12 &kp BACKSLASH       &kp SLASH  &kp N7 &kp N8 &kp N9 &kp N0
                 &trans &trans &trans                               &mo 3   &trans &trans
                 // fila 4 (direct inputs)
-                &ext_power EP_TOG  //toogle external power
+                &ext_power EP_TOG &kp Y &kp U //toogle external power
             >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
@@ -57,7 +57,7 @@
                 &trans &trans &trans &trans &trans                                     &kp C_VOL_UP &kp HOME &kp C_VOL_DN &trans &out OUT_TOG
                 &trans &trans &mo 3                                                    &trans   &trans   &trans
                 // fila 4 (direct inputs)
-                &out OUT_BLE
+                &out OUT_BLE &kp Y &kp U
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
@@ -69,7 +69,7 @@
                 &kp Z &kp X &kp C &kp V &kp B         &kp N &kp M &kp COMMA &kp DOT &kp SLASH
                 &kp LCTRL &kp LALT &trans             &trans &kp SPACE &kp RALT
                 // fila 4 (direct inputs)
-                &out OUT_BLE
+                &out OUT_BLE &kp Y &kp U
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
