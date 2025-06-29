@@ -95,5 +95,17 @@
             bindings = <&kp LS(0)>;
             layers = <0>;
         };
+        left_brace {
+            timeout-ms = <40>;
+            key-positions = <13 14>; // F y G
+            bindings = <&kp LBRC>;
+            layers = <0>;
+        };
+         right_brace {
+            timeout-ms = <40>;
+            key-positions = <15 16>; // H y J
+            bindings = <&kp RBRC>;
+            layers = <0>;
+        };
     };
 };
