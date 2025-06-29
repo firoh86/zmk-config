@@ -31,7 +31,7 @@
                 // fila 4 (direct inputs)
                 &kp CAPS &kp Y &kp U
             >;
-                sensor-bindings = <&rot_kp N D>;
+                sensor-bindings = <&rot_kp PG_UP PG_DN>;
         };
 
 
