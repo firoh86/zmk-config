@@ -15,11 +15,11 @@
 
  / {
 
-      sensors {
+        sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <24>;
-    };
+        triggers-per-rotation = <24>; // One key action per detent
+        };
     
     keymap {
         compatible = "zmk,keymap";
@@ -34,7 +34,6 @@
                 &kp CAPS &kp Y &kp U
             >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-                sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
 
