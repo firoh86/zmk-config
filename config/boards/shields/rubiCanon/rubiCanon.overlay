@@ -116,8 +116,8 @@
 */
         sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder>;
-        triggers-per-rotation = <12>; // One key action per detent
+         sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <6>; // One key action per detent
         };
 
 };
