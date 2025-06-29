@@ -17,7 +17,7 @@
 
         sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = &left_encoder;
+        sensors = <&left_encoder>;
         triggers-per-rotation = <12>; // One key action per detent
         };
     
@@ -71,7 +71,7 @@
                 // fila 4 (direct inputs)
                 &out OUT_BLE &kp Y &kp U
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 
