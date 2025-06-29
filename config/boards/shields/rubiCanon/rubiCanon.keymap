@@ -14,6 +14,14 @@
 
 
  / {
+     behaviors {
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -26,7 +34,7 @@
                 // fila 4 (direct inputs)
                 &kp CAPS &kp Y &kp U
             >;
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>;
         };
 
 
@@ -40,7 +48,7 @@
                 // fila 4 (direct inputs)
                 &ext_power EP_TOG &kp Y &kp U //toogle external power
             >;
-                sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+                sensor-bindings = <&rot_kp PG_UP PG_DN>;
         };
 
         layer_2 {
@@ -52,7 +60,7 @@
                 // fila 4 (direct inputs)
                 &out OUT_BLE &kp Y &kp U
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&rot_kp PG_UP PG_DN>;
         };
 
         layer_3 {
@@ -64,7 +72,7 @@
                 // fila 4 (direct inputs)
                 &out OUT_BLE &kp Y &kp U
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>;
         };
     };
 
