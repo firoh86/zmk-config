@@ -13,6 +13,7 @@
 
 
  / {
+    /*
      behaviors {
             rot_kp: sensor_rotate_kp {
                     compatible = "zmk,behavior-sensor-rotate-var";
@@ -20,7 +21,14 @@
                     bindings = <&kp>,<&kp>;
             };
     };
-
+*/
+        behaviors {
+                rot_kp: sensor_rotate_kp {
+                    compatible = "zmk,behavior-sensor-rotate-key-press";
+                    #sensor-binding-cells = <0>;
+                    bindings = <&kp PG_UP>, <&kp PG_DN>;
+                };
+            };
     keymap {
         compatible = "zmk,keymap";
 
@@ -33,7 +41,7 @@
                 // fila 4 (direct inputs)
                 &kp CAPS &kp Y &kp U
             >;
-                sensor-bindings = <&rot_kp PG_UP PG_DN>;
+            sensor-bindings = <&rot_kp 0 1>;
         };
 
 
