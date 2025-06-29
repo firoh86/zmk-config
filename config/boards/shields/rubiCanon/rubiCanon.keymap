@@ -17,8 +17,8 @@
 
         sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <24>; // One key action per detent
+        sensors = &left_encoder;
+        triggers-per-rotation = <12>; // One key action per detent
         };
     
     keymap {
@@ -33,7 +33,7 @@
                 // fila 4 (direct inputs)
                 &kp CAPS &kp Y &kp U
             >;
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
 
@@ -47,7 +47,7 @@
                 // fila 4 (direct inputs)
                 &ext_power EP_TOG &kp Y &kp U //toogle external power
             >;
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_2 {
@@ -59,7 +59,7 @@
                 // fila 4 (direct inputs)
                 &out OUT_BLE &kp Y &kp U
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_3 {
@@ -71,7 +71,7 @@
                 // fila 4 (direct inputs)
                 &out OUT_BLE &kp Y &kp U
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN >;
         };
     };
 
