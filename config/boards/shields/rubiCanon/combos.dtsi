@@ -75,37 +75,37 @@
         combo_llave1 {
             timeout-ms = <40>;
             key-positions = <1 2>; // W y E
-            bindings = <&kp RS(COMMA)>;
+            bindings = <&kp LT>;
             layers = <0>;
         };
         combo_llave2 {
             timeout-ms = <40>;
             key-positions = <1 2>; // I y O
-            bindings = <&kp RS(DOT)>;
+            bindings = <&kp GT>;
             layers = <0>;
         };
         combo_parentesis_abre {
             timeout-ms = <40>;
             key-positions = <11 12>; // S y D
-            bindings = <&kp LS(8)>;
+            bindings = <&kp LPAR>;
             layers = <0>;
         };
          combo_parentesis_cierra {
             timeout-ms = <40>;
             key-positions = <17 18>; // K y L
-            bindings = <&kp LS(9)>;
+            bindings = <&kp RPAR>;
             layers = <0>;
         };
         left_brace {
             timeout-ms = <40>;
             key-positions = <13 14>; // F y G
-            bindings = <&kp RS(SEMI)>;
+            bindings = <&kp LBRC>;
             layers = <0>;
         };
          right_brace {
             timeout-ms = <40>;
             key-positions = <15 16>; // H y J
-            bindings = <&kp RS(APOS)>;
+            bindings = <&kp RBRC>;
             layers = <0>;
         };
     };
