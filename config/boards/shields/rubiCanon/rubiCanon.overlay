@@ -97,11 +97,12 @@
     };
  
     /* ---------- ENCODERS ---------- */
+    
     left_encoder: encoder_left {
         compatible = "alps,ec11"; // EC11-compatible behavior
         a-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <24>;  // 24 detents per rotation
+        steps = <24>; 
         status = "disabled";
     };
 
@@ -112,18 +113,21 @@
         steps = <24>;
         status = "disabled";
     };
-        sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-         sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <12>; // One key action per detent
-        };
+
+    sensors: sensors {
+    compatible = "zmk,keymap-sensors";
+    sensors = <&left_encoder &right_encoder>;
+    triggers-per-rotation = <12>; 
+    };
+
+    &left_encoder {
+        status = "okay";
+    };
 
     &right_encoder {
         status = "okay";
     };
-    &left_encoder {
-        status = "okay";
-    };
+   
 };
  
 
