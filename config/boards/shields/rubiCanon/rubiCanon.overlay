@@ -105,7 +105,6 @@
         status = "okay";
     };
 
-/*
     right_encoder: encoder_right {
         compatible = "alps,ec11";
         a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
@@ -113,7 +112,6 @@
         steps = <24>;
         status = "okay";
     };
-*/
         sensors: sensors {
         compatible = "zmk,keymap-sensors";
          sensors = <&left_encoder &right_encoder>;
