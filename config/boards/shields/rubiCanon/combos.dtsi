@@ -44,6 +44,7 @@
             layers = <0>;
         };
 
+
         combo_del {
             timeout-ms = <40>;
             key-positions = <12 13>; // Q y A
@@ -66,7 +67,7 @@
         };
 
         combo_acento {
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             key-positions = <17 18>; // L y Ñ
             bindings = <&kp APOSTROPHE>;
             layers = <0>;
@@ -74,37 +75,37 @@
         combo_llave1 {
             timeout-ms = <40>;
             key-positions = <1 2>; // W y E
-            bindings = <&kp LS(COMMA)>;
+            bindings = <&kp RS(COMMA)>;
             layers = <0>;
         };
         combo_llave2 {
             timeout-ms = <40>;
             key-positions = <1 2>; // I y O
-            bindings = <&kp LS(DOT)>;
+            bindings = <&kp RS(DOT)>;
             layers = <0>;
         };
         combo_parentesis_abre {
             timeout-ms = <40>;
             key-positions = <11 12>; // S y D
-            bindings = <&kp LS(9)>;
+            bindings = <&kp LS(8)>;
             layers = <0>;
         };
          combo_parentesis_cierra {
             timeout-ms = <40>;
             key-positions = <17 18>; // K y L
-            bindings = <&kp LS(0)>;
+            bindings = <&kp LS(9)>;
             layers = <0>;
         };
         left_brace {
             timeout-ms = <40>;
             key-positions = <13 14>; // F y G
-            bindings = <&kp LBRC>;
+            bindings = <&kp RS(SEMI)>;
             layers = <0>;
         };
          right_brace {
             timeout-ms = <40>;
             key-positions = <15 16>; // H y J
-            bindings = <&kp RBRC>;
+            bindings = <&kp RS(APOS)>;
             layers = <0>;
         };
     };
