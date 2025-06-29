@@ -97,12 +97,11 @@
     };
  
     /* ---------- ENCODERS ---------- */
-    /*
     left_encoder: encoder_left {
         compatible = "alps,ec11"; // EC11-compatible behavior
         a-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        steps = <48>; 
+        steps = <12>; 
         status = "ok";
     };
 
@@ -110,7 +109,7 @@
         compatible = "alps,ec11";
         a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        steps = <48>;
+        steps = <12>;
         status = "ok";
     };
 
@@ -118,22 +117,6 @@
     compatible = "zmk,keymap-sensors";
     sensors = <&left_encoder &right_encoder>;
     triggers-per-rotation = <24>; 
-    };
-
-*/
-
-      encoder_left: encoder_left {
-        compatible = "alps,ec11";
-        a-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        steps = <24>;
-        status = "okay";
-    };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder_left>;
-        triggers-per-rotation = <12>;  // para EC11 típicos de 24 steps
     };
 
 };
