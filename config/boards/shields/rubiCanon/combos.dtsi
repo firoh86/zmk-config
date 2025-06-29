@@ -1,4 +1,6 @@
-/ {
+#include "keys_es.h"
+
+ / {
     combos {
         compatible = "zmk,combos";
 
@@ -68,44 +70,50 @@
 
         combo_acento {
             timeout-ms = <50>;
-            key-positions = <17 18>; // L y Ñ
+            key-positions = <16 17>; // L y Ñ
             bindings = <&kp APOSTROPHE>;
             layers = <0>;
         };
+
         combo_llave1 {
             timeout-ms = <40>;
             key-positions = <1 2>; // W y E
-            bindings = <&kp LT>;
+            bindings = <&kp ES_LT>;
             layers = <0>;
         };
+
         combo_llave2 {
             timeout-ms = <40>;
             key-positions = <1 2>; // I y O
-            bindings = <&kp GT>;
+            bindings = <&kp ES_GT>;
             layers = <0>;
         };
+
         combo_parentesis_abre {
             timeout-ms = <40>;
             key-positions = <11 12>; // S y D
-            bindings = <&kp LPAR>;
+            bindings = <&kp ES_LPAR>;
             layers = <0>;
         };
+
          combo_parentesis_cierra {
             timeout-ms = <40>;
             key-positions = <17 18>; // K y L
-            bindings = <&kp RPAR>;
+            bindings = <&kp ES_RPAR>;
             layers = <0>;
         };
+
         left_brace {
             timeout-ms = <40>;
             key-positions = <13 14>; // F y G
-            bindings = <&kp LBRC>;
+            bindings = <&kp ES_LBRC>;
             layers = <0>;
         };
+
          right_brace {
             timeout-ms = <40>;
             key-positions = <15 16>; // H y J
-            bindings = <&kp RBRC>;
+            bindings = <&kp ES_RBRC>;
             layers = <0>;
         };
     };
