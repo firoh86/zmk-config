@@ -153,7 +153,7 @@
         Comillas {
             timeout-ms = <50>;
             key-positions = <15 16>; // H y J
-            bindings = <&kp QUOTE>;
+            bindings = <&kp LS(APOSTROPHE)>;
             layers = <1>;
         };
          Comilla_simple {
