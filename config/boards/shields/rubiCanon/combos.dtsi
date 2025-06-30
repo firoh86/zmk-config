@@ -1,45 +1,44 @@
-#include "keys_es.h"
 
  / {
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        Escape {
             timeout-ms = <40>;
             key-positions = <0 1>; // Q y W
             bindings = <&kp ESC>;
             layers = <0>;
         };
 
-        combo_tab {
+        Tabulador {
             timeout-ms = <40>;
             key-positions = <10 11>; // A y S
             bindings = <&kp TAB>;
             layers = <0>;
         };
 
-        combo_shift {
+        Lshift {
             timeout-ms = <40>;
             key-positions = <20 21>; // Z y X
             bindings = <&kp LSFT>;
             layers = <0>;
         };
 
-        combo_bspc {
+        Backspace {
             timeout-ms = <40>;
             key-positions = <8 9>; // P y +
             bindings = <&kp BSPC>;
             layers = <0 1>;
         };
 
-        combo_enter {
+        Enter {
             timeout-ms = <40>;
             key-positions = <18 19>; // L y Ñ
             bindings = <&kp ENTER>;
             layers = <0 1>;
         };
 
-        combo_rshift {
+        Rshift {
             timeout-ms = <40>;
             key-positions = <28 29>; // . y -
             bindings = <&kp RSFT>;
@@ -47,74 +46,121 @@
         };
 
 
-        combo_del {
+        Delete {
             timeout-ms = <40>;
             key-positions = <12 13>; // Q y A
             bindings = <&kp DEL>;
             layers = <0>;
         };
 
-        combo_interrogacion_abre {
+        Interrogacion_abre {
             timeout-ms = <40>;
             key-positions = <3 4>; // R y T
             bindings = <&kp LS(EQUAL)>; 
             layers = <0>;
         };
 
-        combo_interrogacion_cierra {
+        Interrogacion_cierra {
             timeout-ms = <40>;
             key-positions = <5 6>; // Y y U
             bindings = <&kp LS(UNDER)>; 
             layers = <0>;
         };
 
-        combo_acento {
+        Acento {
             timeout-ms = <50>;
             key-positions = <16 17>; // L y Ñ
             bindings = <&kp APOSTROPHE>;
             layers = <0>;
         };
 
-        combo_llave1 {
+        Menor_que {
             timeout-ms = <40>;
             key-positions = <1 2>; // W y E
-            bindings = <&kp ES_LT>;
+            bindings = <&kp LS(COMMA)>;
             layers = <0>;
         };
 
-        combo_llave2 {
+        Mayor_que {
             timeout-ms = <40>;
             key-positions = <1 2>; // I y O
-            bindings = <&kp ES_GT>;
+            bindings = <&kp LS(DOT)>;
             layers = <0>;
         };
 
-        combo_parentesis_abre {
+        Parentesis_abre {
             timeout-ms = <40>;
             key-positions = <11 12>; // S y D
-            bindings = <&kp ES_LPAR>;
+            bindings = <&kp LS(N8)>;
             layers = <0>;
         };
 
-         combo_parentesis_cierra {
+         Parentesis_cierra {
             timeout-ms = <40>;
             key-positions = <17 18>; // K y L
-            bindings = <&kp ES_RPAR>;
+            bindings = <&kp LS(N9)>;
             layers = <0>;
         };
 
-        left_brace {
+        Left_brace {
             timeout-ms = <40>;
             key-positions = <13 14>; // F y G
-            bindings = <&kp ES_LBRC>;
+            bindings = <&kp LS(LEFT_BRACKET)>;
             layers = <0>;
         };
 
-         right_brace {
+         Right_brace {
             timeout-ms = <40>;
             key-positions = <15 16>; // H y J
-            bindings = <&kp ES_RBRC>;
+            bindings = <&kp LS(RIGHT_BRACKET)>;
             layers = <0>;
+        };
+
+        //Capa1
+
+        Left_bracket {
+            timeout-ms = <40>;
+            key-positions = <3 4>; // R y T
+            bindings = <&kp LEFT_BRACKET>; 
+            layers = <1>;
+        };
+
+        Right_bracket {
+            timeout-ms = <40>;
+            key-positions = <5 6>; // Y y U
+            bindings = <&kp RIGHT_BRACKET>; 
+            layers = <1>;
+        };
+         Slash {
+            timeout-ms = <40>;
+            key-positions = <1 2>; // W y E
+            bindings = <&kp SLASH>;
+            layers = <1>;
+        };
+
+        Backslash {
+            timeout-ms = <40>;
+            key-positions = <1 2>; // I y O
+            bindings = <&kp BACKSLASH>;
+            layers = <1>;
+        };
+        Pipe {
+            timeout-ms = <40>;
+            key-positions = <11 12>; // S y D
+            bindings = <&kp LS(BACKSLASH)>;
+            layers = <1>;
+        };
+        Comillas {
+            timeout-ms = <50>;
+            key-positions = <15 16>; // H y J
+            bindings = <&kp QUOTE>;
+            layers = <1>;
+        };
+         Comilla_simple {
+            timeout-ms = <50>;
+            key-positions = <17 18>; // K y L
+            bindings = <&kp APOSTROPHE >;
+            layers = <1>;
         };
     };
 };
