@@ -41,7 +41,7 @@
         layer_1 {
             bindings = <
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-                &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                 &kp F6 &kp F7 &kp F8 &kp F9 &kp F12
+                &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                 &kp F6 &kp F7 &kp F10 &kp F11 &kp F12
                 // simbolos
                 &kp F9 &kp F10 &kp F11 &kp F12 &kp BACKSLASH       &kp LS(COMMA)  &kp LS(DOT) &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp AT
                 &trans &trans &trans                               &mo 3   &trans &trans
@@ -54,7 +54,7 @@
         layer_2 {
             bindings = <//perfiles de configuracion
                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR         &kp PG_UP &kp UP &kp PG_DN &trans &kp LEFT_GUI
-                &kp LS(N1) &kp APOSTROPHE &kp APOSTROPHE &kp EQUAL &kp GRAVE           &kp LEFT &kp DOWN &kp RIGHT &trans &trans
+                &kp LBKT &kp RBKT &kp LS(LBKT) &kp LS(RBKT) &kp GRAVE                  &kp LEFT &kp DOWN &kp RIGHT &trans &trans
                 &trans &trans &trans &trans &trans                                     &kp C_VOL_UP &kp HOME &kp C_VOL_DN &trans &out OUT_TOG
                 &trans &trans &mo 3                                                    &trans   &trans   &trans
                 // fila 4 (direct inputs)
@@ -70,7 +70,7 @@
                 &kp Z &kp X &kp C &kp V &kp B         &kp N &kp M &kp COMMA &kp DOT &kp SLASH
                 &kp LCTRL &kp LALT &trans             &trans &kp SPACE &kp RALT
                 // fila 4 (direct inputs)
-                &out OUT_BLE &kp Y &kp U
+                &studio_unlock &kp Y &kp U
             >;
             sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>;
         };
