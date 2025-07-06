@@ -70,7 +70,7 @@
                 &kp Z &kp X &kp C &kp V &kp B         &kp N &kp M &kp COMMA &kp DOT &kp SLASH
                 &kp LCTRL &kp LALT &trans             &trans &kp SPACE &kp RALT
                 // fila 4 (direct inputs)
-                &studio_unlock &kp Y &kp U
+                &out OUT_BLE &kp Y &kp U
             >;
             sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>;
         };
