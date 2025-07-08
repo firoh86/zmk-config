@@ -43,7 +43,7 @@
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                 &kp F6 &kp F7 &kp F10 &kp F11 &kp F12
                 // simbolos
-                &kp F9 &kp F10 &kp F11 &kp F12 &kp BACKSLASH       &kp LS(COMMA)  &kp LS(DOT) &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp AT
+                &trans &trans &trans &trans &trans                 &trans  &trans &trans &trans &trans
                 &trans &trans &trans                               &mo 3   &trans &trans
                 // fila 4 (direct inputs)
                 &ext_power EP_TOG &kp Y &kp U //toogle external power
@@ -63,11 +63,11 @@
             sensor-bindings = <&rot_kp PG_UP PG_DN>;
         };
 
-        layer_3 {
+        symbols {
             bindings = <
-                &kp Q &kp W &kp E &kp R &kp T         &bt BT_CLR &kp UP &kp I &kp O &kp P
-                &kp A &kp S &kp D &kp F &kp G         &kp LEFT &kp DOWN &kp RIGHT &kp L &kp SEMI
-                &kp Z &kp X &kp C &kp V &kp B         &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+                &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT         &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
+                &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &kp FSLH      &kp QMARK &kp BSLH &kp PIPE &kp NUBS &kp SQT
+                &kp DQT &kp LT &kp GT &kp LBKT &kp RBKT              &kp LBRC &kp RBRC &kp GRAVE &kp TILDE &kp NUHS
                 &kp LCTRL &kp LALT &trans             &trans &kp SPACE &kp RALT
                 // fila 4 (direct inputs)
                 &out OUT_BLE &kp Y &kp U
