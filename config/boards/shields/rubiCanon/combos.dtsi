@@ -56,14 +56,14 @@
         Interrogacion_abre {
             timeout-ms = <40>;
             key-positions = <3 4>; // R y T
-            bindings = <&kp LS(EQUAL)>; 
+            bindings = <&kp PLUS>; 
             layers = <0>;
         };
 
         Interrogacion_cierra {
             timeout-ms = <40>;
             key-positions = <5 6>; // Y y U
-            bindings = <&kp LS(UNDER)>; 
+            bindings = <&kp UNDER>; 
             layers = <0>;
         };
 
@@ -77,28 +77,28 @@
         Menor_que {
             timeout-ms = <40>;
             key-positions = <1 2>; // W y E
-            bindings = <&kp LS(COMMA)>;
+            bindings = <&kp NUBS>;
             layers = <0>;
         };
 
         Mayor_que {
             timeout-ms = <40>;
             key-positions = <1 2>; // I y O
-            bindings = <&kp LS(DOT)>;
+            bindings = <&kp LS(NUBS)>;
             layers = <0>;
         };
 
         Parentesis_abre {
             timeout-ms = <40>;
             key-positions = <11 12>; // S y D
-            bindings = <&kp LS(N8)>;
+            bindings = <&kp LPAR>;
             layers = <0>;
         };
 
          Parentesis_cierra {
             timeout-ms = <40>;
             key-positions = <17 18>; // K y L
-            bindings = <&kp LS(N9)>;
+            bindings = <&kp RPAR>;
             layers = <0>;
         };
 
@@ -134,7 +134,7 @@
          Slash {
             timeout-ms = <40>;
             key-positions = <1 2>; // W y E
-            bindings = <&kp SLASH>;
+            bindings = <&kp AMPS>;
             layers = <1>;
         };
 
@@ -153,13 +153,13 @@
         Comillas {
             timeout-ms = <50>;
             key-positions = <15 16>; // H y J
-            bindings = <&kp LS(APOSTROPHE)>;
+            bindings = <&kp AT>;
             layers = <1>;
         };
          Comilla_simple {
             timeout-ms = <50>;
             key-positions = <17 18>; // K y L
-            bindings = <&kp APOSTROPHE >;
+            bindings = <&kp MINUS>;
             layers = <1>;
         };
     };
